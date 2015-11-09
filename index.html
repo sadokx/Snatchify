@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snatchify | High-res App Artwork</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<img src="img/logo.svg" alt="Snatchify Logo">
+		<p>Retrieve high-res icon artwork from the iTunes AppStore.</p>
+	</header>
+	<main>
+		<form class="submit">
+			<div class="input-container">
+				<img class="link-icon" src="img/link.svg" alt="Link">
+				<input type="url" id="input-link" placeholder="Enter a valid app store link (iTunes)" autofocus>
+			</div>
+			<button type="submit">SNATCH</button>
+		</form>
+		<a class="link-example-button" href="#">EXAMPLE LINK</a>
+		<div class="error display-none"></div>
+		<div class="spinner display-none"></div>
+
+		<div class="wrapper display-none">
+			<div class="content">
+				<!-- <img src="https://source.unsplash.com/random/300x300" alt="Icon Artwork"> -->
+				<div class="app-data-container">
+					<div class="app-title">AppName</div>
+					<div class="app-company"> by Company</div>
+					<div class="app-info">
+						<div id="category"></div>
+						<div id="version"></div>
+					</div>
+					<div class="app-dimensions">Full icon dimensions:<span class="dimensions full-block">512 x 512</span>
+					</div>
+					<a id="download-button" href="#" class="download-button" download>DOWNLOAD ARTWORK</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		Enthusiastically coded with newly-found skills by <a href="https://twitter.com/sadokX">Sadok :D</a>&nbsp;&nbsp;<i>&#9996;</i>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

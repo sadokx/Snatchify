@@ -1,0 +1,328 @@
+/*
+
+	Colors
+	@text: #212121;
+	@grey-text: #727272;
+	@dimensions: #0482D3;
+	@buttons: #49CE79;
+	@gradient-light: #0485D7;
+	@gradient-dark: #03074E;
+
+
+
+*/
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #03074E;
+
+	background: url(../img/dots.png) repeat 0 0, -webkit-radial-gradient(center top, circle farthest-side, #0485D7, #03074E);
+	background: url(../img/dots.png) repeat 0 0, -moz-radial-gradient(center top, circle farthest-side, #0485D7, #03074E);
+	background: url(../img/dots.png) repeat 0 0, -ms-radial-gradient(center top, circle farthest-side, #0485D7, #03074E);
+	background: url(../img/dots.png) repeat 0 0, -o-radial-gradient(center top, circle farthest-side, #0485D7, #03074E);
+	background: url(../img/dots.png) repeat 0 0, radial-gradient(center top, circle farthest-side, #0485D7, #03074E);
+
+/*	background: url(https://twitterbattle-alecortega.herokuapp.com/images/dots.png) repeat 0 0, radial-gradient(circle closest-corner at 50% -20%, #1A4F7B, #000B13); */
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.5;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	max-width: 43.75em; /* 880/16 */
+	margin: 0 auto;
+	padding: 0;
+	color: #fff;
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: inherit;
+}
+
+
+/* 
+	HEADER STYLES
+*/
+
+header{
+	margin: 50px 0;
+}
+
+header img{
+	margin-bottom: 8px;
+}
+
+header p{
+	font-weight: 300;
+	font-size: 1.1em;
+}
+
+
+/* 
+	MAIN STYLES
+*/
+
+.link-icon{
+	top: 13px;
+    left: 10px;
+	position: absolute;
+	z-index: 10;
+
+
+}
+
+.input-container{
+	position: relative;
+	background: #fff;
+	width: 434px;
+	height: 50px;
+	border-radius: 3px 0 0 3px;
+}
+
+form{
+	height: 50px;
+	width: 538px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 0 10px 22px rgba(0,0,0,.15);
+	margin-bottom: 20px;
+}
+
+form button{
+	position: absolute;
+	top: 0; right: 0;
+	height: 50px;
+	padding: 14px 18px;
+	background-color: #49CE79;
+	border: none;
+	color: white;
+	border-radius: 0 3px 3px 0;
+	font-size: 1em;
+	font-weight: 700;
+	transition: background-color .15s ease;
+	-webkit-transition: background-color .15s ease;
+}
+
+form button:hover:not([disabled]), .download-button:hover{
+	background-color: #00AE3E;
+	cursor: pointer;
+}
+
+form button:disabled{
+	opacity: .6;
+}
+
+form input{
+	width: 83%;
+	border: none;
+	position: absolute;
+	top: 0; bottom: 0; left: 55px;
+	margin: auto 0;
+	font-size: .875em;
+	font-weight: 300;
+	color: #212121;
+}
+
+form input:focus{
+	outline: none;
+}
+
+.wrapper{
+	background-color: white;
+	width: 540px;
+	height: 327px;
+	box-shadow: 0 10px 22px rgba(0,0,0,.20);
+	margin: 0 auto;
+	border-radius: 3px;
+}
+
+.wrapper img{
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin: 14px auto 0 14px;
+	border-radius: 60px;
+}
+
+.app-data-container{
+	color: #212121;
+	margin-top: 30px;
+	text-align: left;
+	display: inline-block;
+	width: 130px;
+	height: auto;
+}
+
+.app-title{
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-bottom: 5px;
+	line-height: 1.2em;
+}
+
+.app-company{
+	font-weight: 300;
+	font-size: .375em;
+	margin-bottom: 10px;
+}
+
+.app-info, .app-dimensions{
+	font-size: .7em;
+	font-weight: 300;
+	color: #B6B6B6;
+	margin-bottom: 20px;
+}
+
+.dimensions.full-block{
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	color: #0482D3;
+	letter-spacing: -1px;
+}
+
+.download-button, .link-example-button{
+	font-weight: 700;
+	color: white;
+	background-color: #49CE79;
+	font-size: .625em;
+	border-radius: 3px;
+	padding: 8px 11px;
+	text-decoration: none;
+	transition: background-color .15s ease;
+	-webkit-transition: background-color .15s ease;
+}
+
+.link-example-button{
+	background-color: #e0e0e0;
+	color: #828282;
+	letter-spacing: 1px;
+	padding: 10px 15px;
+
+}
+
+.link-example-button:hover{
+	background-color: #c5c5c5;
+}
+
+.display-none{
+	display: none;
+}
+
+.error{
+	font-weight: 300;
+}
+
+.error em{
+	color: #ff3a3a;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.error-pop {
+    -webkit-animation: pop .333s;
+    -moz-animation: pop .333s;
+    -o-animation: pop .333s;
+    animation: pop .333s;
+}
+ 
+@-webkit-keyframes pop {
+    0%   {-webkit-transform: scale(1);}
+    50%  {-webkit-transform: scale(1.075);}
+    100% {-webkit-transform: scale(1);}
+}
+ 
+@-moz-keyframes pop {
+    0%   {-moz-transform: scale(1);}
+    50%  {-moz-transform: scale(1.075);}
+    100% {-moz-transform: scale(1);}
+}
+ 
+@-o-keyframes pop {
+    0%   {-o-transform: scale(1);}
+    50%  {-o-transform: scale(1.075);}
+    100% {-o-transform: scale(1);}
+}
+ 
+@keyframes pop {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.075);}
+    100% {transform: scale(1);}
+}
+
+footer{
+	position: absolute;
+	bottom: 20px; left: 0; right: 0;
+	margin: 0 auto;
+	font-weight: 300;
+	font-size: .7em;
+}
+
+footer i{
+	font-size: 1.5em;
+}
+
+/* 
+
+	SPINNER
+
+*/
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

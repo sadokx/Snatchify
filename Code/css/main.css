@@ -36,6 +36,8 @@ html {
 }
 
 body {
+	min-height: 93%;
+	position: relative;
 	font-size: 1em;
 	line-height: 1.5;
 	font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -43,6 +45,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	color: #fff;
+	padding-bottom: 40px;
 
 }
 
@@ -91,7 +94,7 @@ header p{
 	position: relative;
 	background: #fff;
 	width: 434px;
-	height: 50px;
+	height: 100%;
 	border-radius: 3px 0 0 3px;
 }
 
@@ -268,10 +271,11 @@ form input:focus{
 
 footer{
 	position: absolute;
-	bottom: 20px; left: 0; right: 0;
+	bottom: 0; left: 0; right: 0;
 	margin: 0 auto;
 	font-weight: 300;
 	font-size: .7em;
+	padding: 5px 0;
 }
 
 footer i{
@@ -314,6 +318,83 @@ footer i{
 }
 
 
+@media (max-width: 600px) {
+
+	form {
+		width: 300px;
+		height: auto;
+		box-shadow: none;
+
+	}
+
+	form button {
+		display: block;
+		position: static;
+		font-size: .8em;
+		border-radius: 3px;
+		margin: 0 auto;
+		box-shadow: 0 10px 22px rgba(0,0,0,.15);
+		padding: 10px 0;
+		height: auto;
+		width: 300px;
+	}
+
+	form input {
+		width: 75%;
+		left: 48px;
+	}
+
+	.input-container {
+		display: block;
+		width: 100%;
+		height: 40px;
+		margin-bottom: 5px;
+		border-radius: 3px;
+		box-shadow: 0 10px 22px rgba(0,0,0,.15);
+	}
+
+	.link-icon {
+    	top: 8px;
+    	left: 3px;
+    }
+
+    .spinner {
+    	margin: 30px auto;
+    }
+
+    header {
+    	margin-top: 30px;
+    }
+
+    header p {
+    	font-size: 0.9em;
+    	margin: 0 auto;
+    	width: 70%;
+    }
+
+    header img {
+    	width: 180px;
+    }
+
+    .wrapper {
+    	width: 300px;
+    	height: auto;
+    	padding: 20px;
+    }
+
+    .wrapper img {
+    	width: 90%;
+    	height: auto;
+    	margin: 0 auto;
+    	float: none;
+    	margin-bottom: 0;
+    }
+
+    .app-data-container {
+    	text-align: center;
+    	margin-top: 10px;
+    }
+}
 
 
 
